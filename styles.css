@@ -1,0 +1,82 @@
+#calculator{
+  border: 1px solid rgb(4, 229, 64);
+  border-radius: 5px;
+  width: 400px;
+  padding:10px;
+  padding-right: 0px;
+  padding-left: 20px;;
+  
+  
+}
+.shiva{
+background: url('https://res.cloudinary.com/nihars3/image/upload/v1696232927/photo-1619429858348-2d5ad1547e6c_nnvynb.jpg');
+padding: 10px;
+
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+
+}
+#display{
+  padding: 5px 5px 5px 5px;
+  
+  
+  margin:15px;
+  width: 85%;
+  height: 40px;
+  font-size: 30px;
+  color: rgb(50, 9, 175);
+  border: 1px solid rgb(234, 132, 210);
+  border-radius: 5px;
+}
+
+
+/* Floating Placeholder */
+#floating-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 20px;
+  
+  color: rgb(249, 95, 226);
+  font-style: oblique;
+  pointer-events: none; /* Prevents interference */
+  animation: floatPlaceholder 3s ease-in-out infinite alternate;
+  white-space: nowrap; /* Prevents text from breaking */
+}
+
+/* Floating Animation */
+@keyframes floatPlaceholder {
+  0% { left: 0; }
+  50% { left: 30%; } /* Adjust this value based on input width */
+  100% { left: 0; }
+}
+#display::placeholder{
+   font-size: 20px ;
+   color: rgb(237, 128, 221);
+   font-style: oblique;
+}
+.button-container{
+  padding: 5px;
+
+  margin: 10px ;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 0.5px solid #35829c97;
+   border-radius: 5px;
+   margin: 10px;
+   width: 85%;
+}
+
+.button{
+  width:70px;
+  height: 70px;
+  margin: 10px;
+  font-size: 30px;
+  font-style:normal;
+  border: 1px solid rgb(10, 227, 180);
+  border-radius: 5px;
+  
+}
