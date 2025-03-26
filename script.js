@@ -19,3 +19,8 @@ document.querySelectorAll(".button").forEach(button => {
         setTimeout(togglePlaceholder, 10); // Ensures display updates first
     });
 });
+
+function removeLastChar() {
+    currentDisplay = currentDisplay.toString().slice(0, -1); // Convert to string before slicing
+    document.querySelector("#display").value = currentDisplay;
+}
